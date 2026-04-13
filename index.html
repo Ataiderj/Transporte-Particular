@@ -3,17 +3,15 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<title>Transfer Personalizado no RJ | 24h</title>
-
+<title>Transfer Personalizado no RJ</title>
 <meta name="description" content="Transfer no Rio de Janeiro. Transporte para hospitais, aeroportos, passeios e viagens com conforto e segurança.">
-
+<meta name="keywords" content="transfer Rio de Janeiro, motorista particular RJ, transfer Galeão, transporte aeroporto RJ, passeio turístico Rio">
+<meta name="author" content="Ataíde Ramos">
+<style>
 <style>
 body {margin:0;font-family:Arial;background:#f4f4f4}
-
 /* HEADER */
 header {background:#000;color:#fff;text-align:center;padding:20px}
-
 /* HERO */
 .hero {
 background:linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),
@@ -120,61 +118,48 @@ z-index: 9999;
 footer {background:#000;color:#fff;text-align:center;padding:15px}
 </style>
 </head>
-
 <body>
-
 <header>
 <h1>Transfer no Rio de Janeiro</h1>
-<p>Atendimento 24h • Conforto • Segurança</p>
+<p>Motorista particular • Conforto e segurança</p>
 </header>
-
-<section class="hero">
-<h2>Transporte com conforto e segurança</h2>
-
-<a href="https://wa.me/5521965480938?text=Olá,%20preciso%20de%20motorista%20no%20Rio" class="btn">
-Chamar no WhatsApp
-</a>
 </section>
-
 <section class="section">
-<h2>Serviços</h2>
-
-<div class="cards">
-<div class="card"><p>✈️ Transfer aeroporto</p></div>
-<div class="card"><p>🏥 Transfer Hospitais</p></div>
-<div class="card"><p>🌴 Transfer Passeios turísticos</p></div>
-<div class="card"><p>🚗 Transfer Viagens particulares</p></div>
-</div>
-
-</section>
-
-<!-- HOSPITAIS -->
-<section class="section">
-<h2>Transporte para Hospitais</h2>
-
-<div class="hospital">
-
-<p>
-Atendimento com conforto, segurança e pontualidade para consultas, exames e internações.
-Ideal para pacientes, idosos e acompanhantes.
-</p>
-
-<p>
-Levo você com tranquilidade para hospitais e clínicas no Rio de Janeiro.
-</p>
-
-<a href="https://wa.me/5521965480938?text=Olá,%20preciso%20de%20transporte%20para%20hospital" class="btn">
-Agendar atendimento
+<h2>Atendimento rápido</h2>
+<div class="whats-grid">
+<a href="https://wa.me/5521965480938?text=Olá,%20preciso%20de%20motorista%20agora" class="whats-btn">
+🚗 Transfer agora
 </a>
-
+<a href="https://wa.me/5521965480938?text=Olá,%20quero%20transfer%20aeroporto" class="whats-btn">
+✈️ Transfer aeroporto
+</a>
+<a href="https://wa.me/5521965480938?text=Olá,%20preciso%20ir%20ao%20hospital" class="whats-btn">
+🏥Transfer Hospital
+</a>
+<a href="https://wa.me/5521965480938?text=Olá,%20quero%20passeio%20turístico" class="whats-btn">
+🌴 Transfer Passeio turístico
+</a>
 </div>
 </section>
-
+<a href="https://wa.me/5521965480938" class="whatsapp">💬</a>
+<a href="https://www.tremdocorcovado.rio/" target="_blank" class="ingressos-btn">
+Ingressos
+</a>
 <section class="section">
+<a href="https://wa.me/5521965480938?text=Olá,%20quero%20um%20orçamento%20de%20transfer%20no%20Rio.%20Pode%20me%20ajudar?"
+class="btn" target="_blank">
+🚗 Solicitar orçamento agora
+</a>
+</section>
+<section class="section">
+<h2>Por que escolher nosso serviço?</h2>
+<p>✔ Motorista experiente</p>
+<p>✔ Atendimento rápido via WhatsApp</p>
+<p>✔ Pontualidade garantida</p>
+<p>✔ Veículo confortável e seguro</p>
+<p>✔ Atendimento 24 horas</p>
 <h2>Pontos turísticos</h2>
-
 <div class="cards">
-
 <div class="card">
 <img src="https://images.unsplash.com/photo-1544989164-31dc3c645987">
 </div>
@@ -182,48 +167,60 @@ Agendar atendimento
 <div class="card">
 <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d">
 </div>
-
 <div class="card">
 <img src="https://images.unsplash.com/photo-1518639192441-8fce0a366e2e">
 </div>
-
 <div class="card">
 <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e">
 </div>
 </div>
 </section>
-
 <section class="section">
-<h2>Atendimento rápido</h2>
-
-<div class="whats-grid">
-
-<a href="https://wa.me/5521965480938?text=Olá,%20preciso%20de%20motorista%20agora" class="whats-btn">
-🚗 Transfer agora
-</a>
-
-<a href="https://wa.me/5521965480938?text=Olá,%20quero%20transfer%20aeroporto" class="whats-btn">
-✈️ Transfer aeroporto
-</a>
-
-<a href="https://wa.me/5521965480938?text=Olá,%20preciso%20ir%20ao%20hospital" class="whats-btn">
-🏥Transfer Hospital
-</a>
-
-<a href="https://wa.me/5521965480938?text=Olá,%20quero%20passeio%20turístico" class="whats-btn">
-🌴 Transfer Passeio turístico
-</a>
-
-</div>
+<h2>Simular valor do transfer</h2>
+<form onsubmit="calcularCorrida(event)">
+<input type="text" id="origem" placeholder="Local de saída" required>
+<input type="text" id="destino" placeholder="Destino" required>
+<select id="tipo">
+  <option value="normal">Corrida simples</option>
+  <option value="ida_volta">Ida e volta</option>
+  <option value="espera">Com espera</option>
+</select>
+<button type="submit">💰 Simular valor</button>
+</form>
+<p id="resultado"></p>
 </section>
-
-<footer>
-<p>© 2026 Ataíde Ramos - Transfer Particular RJ</p>
-</footer>
-
-<a href="https://wa.me/5521965480938" class="whatsapp">💬</a>
-<a href="https://www.tremdocorcovado.rio/" target="_blank" class="ingressos-btn">
-Ingressos
+<a href="https://wa.me/5521965480938" class="whatsapp" target="_blank">
+💬
 </a>
+<script>
+function calcularCorrida(event) 
+{
+  event.preventDefault();
+
+  const destino = document.getElementById('destino').value.toLowerCase();
+  const tipo = document.getElementById('tipo').value;
+
+  let valor = 120;
+
+  if (tipo === "ida_volta") valor = 250;
+  if (tipo === "espera") valor = 180;
+
+  if (destino.includes("barra") || destino.includes("recreio")) valor += 40;
+  if (destino.includes("prainha") || destino.includes("grumari")) valor += 80;
+
+  document.getElementById('resultado').innerText =
+    `Valor estimado: R$ ${valor} (valor pode variar conforme horário e trânsito)`;
+}
+</script>
+<section class="section">
+<h2>O que nossos clientes dizem</h2>
+
+<p>⭐⭐⭐⭐⭐ “Motorista super pontual e educado!”</p>
+<p>⭐⭐⭐⭐⭐ “Atendimento rápido e preço justo.”</p>
+<p>⭐⭐⭐⭐⭐ “Viagem tranquila do aeroporto ao hotel.”</p>
+</section>
+<footer>
+<p>© 2026 Ataíde Ramos - Transfer RJ</p>
+</footer>
 </body>
 </html>
