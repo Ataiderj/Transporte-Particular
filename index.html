@@ -1,431 +1,219 @@
 <!DOCTYPE html>
-<html lang="pt-BR" class="scroll-smooth">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ataíde Ramos - Transfer Personalizado no RJ</title>
-    
-    <!-- Meta Tags para SEO & Performance -->
-    <meta name="description" content="Transfer e motorista particular no Rio de Janeiro. Transporte seguro para aeroportos (Galeão/Santos Dumont), hospitais, passeios turísticos e viagens.">
-    <meta name="keywords" content="transfer Rio de Janeiro, motorista particular RJ, transfer Galeão, transfer Santos Dumont, transporte aeroporto RJ, passeio turístico Rio, Ataide Ramos">
+    <title>Transfer Personalizado no RJ | Ataíde Ramos</title>
+    <meta name="description" content="Transfer no Rio de Janeiro com Ataíde Ramos. Transporte seguro para aeroportos, hospitais, passeios e viagens.">
     <meta name="author" content="Ataíde Ramos">
-    <meta name="theme-color" content="#0F172A">
     
     <!-- Tailwind CSS CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
-    <script>
-        tailwind.config = {
-            theme: {
-                extend: {
-                    colors: {
-                        brand: {
-                            50: '#f0fdf4',
-                            100: '#dcfce7',
-                            500: '#22c55e',
-                            600: '#16a34a',
-                            700: '#15803d',
-                            gold: '#D4AF37',
-                            goldDark: '#B89528',
-                            dark: '#0F172A',
-                            card: '#1E293B',
-                            whatsapp: '#25D366',
-                            whatsappHover: '#1DA851'
-                        }
-                    },
-                    fontFamily: {
-                        sans: ['Inter', 'system-ui', 'sans-serif']
-                    }
-                }
-            }
-        }
-    </script>
-    <!-- Lucide Icons CDN -->
-    <script src="https://unpkg.com/lucide@latest"></script>
-
-    <!-- Custom Style Overrides -->
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+    
     <style>
+        body { font-family: 'Inter', sans-serif; }
         .hero-bg {
-            background: linear-gradient(180deg, rgba(15, 23, 42, 0.85) 0%, rgba(15, 23, 42, 0.95) 100%), 
-                        url('https://images.unsplash.com/photo-1516306580123-e6e52b1b7b5f?q=80&w=1600&auto=format&fit=crop');
+            background: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), 
+                        url('https://images.unsplash.com/photo-1505765050516-f72dcac9c60c?q=80&w=1200&auto=format&fit=crop');
             background-size: cover;
             background-position: center;
         }
-        .card-shadow {
-            box-shadow: 0 10px 30px -5px rgba(0, 0, 0, 0.08);
-        }
     </style>
 </head>
-<body class="bg-slate-50 text-slate-800 font-sans antialiased selection:bg-brand-gold selection:text-slate-900">
+<body class="bg-slate-50 text-slate-800 antialiased flex flex-col min-h-screen">
 
-    <header class="sticky top-0 z-40 bg-brand-dark border-b border-slate-800 text-white shadow-lg">
-        <div class="max-w-6xl mx-auto px-4 py-3 flex justify-between items-center">
-            <a href="#" class="flex items-center gap-3 group">
-                <div class="w-10 h-10 rounded-xl bg-gradient-to-tr from-brand-goldDark to-brand-gold flex items-center justify-center text-brand-dark font-extrabold text-lg shadow-md group-hover:scale-105 transition-transform">
-                    AR
-                </div>
-                <div>
-                    <h1 class="font-bold text-base sm:text-lg leading-tight tracking-tight text-white">Ataíde Ramos</h1>
-                    <p class="text-xs text-brand-gold font-medium">Transfer Personalizado RJ</p>
-                </div>
+    <!-- HEADER -->
+    <header class="bg-slate-900 text-white shadow-md sticky top-0 z-40">
+        <div class="max-w-6xl mx-auto px-4 py-4 flex justify-between items-center">
+            <a href="#" class="text-xl font-bold tracking-wide flex items-center gap-2">
+                <span>🚗</span> Ataíde Ramos <span class="text-xs bg-emerald-600 px-2 py-0.5 rounded text-white font-normal hidden sm:inline">Transfer RJ</span>
             </a>
-            
-            <a href="#orcamento" class="inline-flex items-center gap-2 bg-brand-gold hover:bg-brand-goldDark text-brand-dark font-bold px-4 py-2 rounded-xl text-xs sm:text-sm transition-all shadow-md transform active:scale-95">
-                <i data-lucide="calculator" class="w-4 h-4"></i>
-                <span>Solicitar Orçamento</span>
+            <a href="https://wa.me/5521965480938" target="_blank" rel="noopener noreferrer" 
+               class="bg-emerald-500 hover:bg-emerald-600 text-white font-medium text-sm px-4 py-2 rounded-lg transition-all shadow hover:shadow-lg flex items-center gap-2">
+                <span>💬</span> <span class="hidden sm:inline">Falar no</span> WhatsApp
             </a>
         </div>
     </header>
 
-    <section class="hero-bg text-white py-16 sm:py-24 px-4 border-b border-slate-800">
-        <div class="max-w-4xl mx-auto text-center space-y-6">
-            <div class="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-brand-gold/15 border border-brand-gold/40 text-brand-gold text-xs font-semibold tracking-wide uppercase">
-                <i data-lucide="shield-check" class="w-4 h-4"></i>
-                <span>Segurança • Pontualidade • Conforto</span>
-            </div>
-            
-            <h2 class="text-3xl sm:text-5xl font-black tracking-tight leading-tight">
-                Transfer & Motorista Particular no <span class="text-transparent bg-clip-text bg-gradient-to-r from-brand-gold to-amber-200">Rio de Janeiro</span>
-            </h2>
-            
-            <p class="text-sm sm:text-base text-slate-300 max-w-2xl mx-auto leading-relaxed">
-                Transporte executivo com total tranquilidade para aeroportos (GIG e SDU), consultas médicas, viagens intermunicipais e passeios imperdíveis pela Cidade Maravilhosa.
+    <!-- HERO SECTION -->
+    <section class="hero-bg text-white py-20 px-4 text-center">
+        <div class="max-w-3xl mx-auto space-y-6">
+            <span class="bg-emerald-500/20 text-emerald-300 border border-emerald-500/30 text-xs font-semibold px-3 py-1 rounded-full uppercase tracking-wider">
+                Atendimento Executivo & Particular
+            </span>
+            <h1 class="text-3xl sm:text-5xl font-extrabold leading-tight">
+                Transfer & Transporte Particular no Rio de Janeiro
+            </h1>
+            <p class="text-slate-300 text-base sm:text-lg max-w-xl mx-auto">
+                Conforto, pontualidade e segurança para aeroportos, hospitais, passeios turísticos e viagens.
             </p>
-            
-            <div class="pt-4 flex flex-col sm:flex-row gap-3 justify-center items-center">
-                <a href="#orcamento" class="w-full sm:w-auto inline-flex items-center justify-center gap-2.5 bg-brand-gold hover:bg-brand-goldDark text-brand-dark font-bold px-7 py-3.5 rounded-xl text-base transition-all shadow-xl transform hover:-translate-y-0.5">
-                    <i data-lucide="calendar" class="w-5 h-5"></i>
-                    <span>Pedir Orçamento Agora</span>
-                </a>
-                <a href="https://wa.me/5521965480938?text=Ol%C3%A1%2C%20Ata%C3%ADde!%20Gostaria%20de%20informa%C3%A7%C3%B5es%20gerais%20sobre%20seus%20servi%C3%A7os%20de%20transfer." target="_blank" rel="noopener noreferrer" class="w-full sm:w-auto inline-flex items-center justify-center gap-2.5 bg-brand-whatsapp hover:bg-brand-whatsappHover text-white font-bold px-6 py-3.5 rounded-xl text-base transition-all shadow-lg">
-                    <i data-lucide="message-circle" class="w-5 h-5"></i>
-                    <span>Conversar no WhatsApp</span>
+            <div class="pt-4">
+                <a href="#orcamento" class="bg-emerald-500 hover:bg-emerald-600 text-white font-bold px-8 py-3.5 rounded-xl text-lg shadow-lg hover:shadow-emerald-500/20 transition-all inline-block">
+                    📋 Solicitar Orçamento
                 </a>
             </div>
         </div>
     </section>
 
-    <section class="py-10 bg-slate-100 border-b border-slate-200">
-        <div class="max-w-6xl mx-auto px-4">
-            <h3 class="text-xs font-bold uppercase tracking-wider text-slate-500 text-center mb-6">Nossas Principais Modalidades de Atendimento</h3>
-            
-            <div class="grid grid-cols-2 lg:grid-cols-4 gap-3 sm:gap-5">
-                <a href="#orcamento" onclick="selecionarAtalho('Transfer Aeroporto (Galeão / Santos Dumont)')" class="group p-4 sm:p-5 bg-white rounded-2xl shadow-sm hover:shadow-md border border-slate-200 hover:border-brand-gold transition-all text-center flex flex-col items-center">
-                    <div class="w-12 h-12 mb-3 rounded-xl bg-blue-50 text-blue-600 flex items-center justify-center group-hover:bg-brand-gold group-hover:text-brand-dark transition-colors">
-                        <i data-lucide="plane" class="w-6 h-6"></i>
-                    </div>
-                    <span class="font-bold text-sm sm:text-base text-slate-800">Aeroportos</span>
-                    <span class="text-xs text-slate-500 mt-1">Galeão (GIG) & Santos Dumont (SDU)</span>
+    <!-- ATENDIMENTO RÁPIDO -->
+    <section class="py-12 bg-white border-b border-slate-200">
+        <div class="max-w-5xl mx-auto px-4">
+            <h2 class="text-2xl font-bold text-center text-slate-900 mb-8">Atendimento Rápido</h2>
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4">
+                <a href="https://wa.me/5521965480938?text=Olá,%20Ataíde!%20Preciso%20de%20um%20transfer%20agora." target="_blank" rel="noopener noreferrer"
+                   class="flex items-center justify-center gap-2 bg-slate-100 hover:bg-emerald-50 border border-slate-200 hover:border-emerald-500 text-slate-800 hover:text-emerald-700 font-semibold p-4 rounded-xl transition-all">
+                    <span>🚗</span> Transfer Agora
                 </a>
-
-                <a href="#orcamento" onclick="selecionarAtalho('Passeio Turístico / Tour RJ')" class="group p-4 sm:p-5 bg-white rounded-2xl shadow-sm hover:shadow-md border border-slate-200 hover:border-brand-gold transition-all text-center flex flex-col items-center">
-                    <div class="w-12 h-12 mb-3 rounded-xl bg-amber-50 text-amber-600 flex items-center justify-center group-hover:bg-brand-gold group-hover:text-brand-dark transition-colors">
-                        <i data-lucide="palmtree" class="w-6 h-6"></i>
-                    </div>
-                    <span class="font-bold text-sm sm:text-base text-slate-800">Passeios Turísticos</span>
-                    <span class="text-xs text-slate-500 mt-1">Tour personalizado no Rio</span>
+                <a href="https://wa.me/5521965480938?text=Olá,%20Ataíde!%20Quero%20agendar%20um%20transfer%20para%20o%20aeroporto." target="_blank" rel="noopener noreferrer"
+                   class="flex items-center justify-center gap-2 bg-slate-100 hover:bg-emerald-50 border border-slate-200 hover:border-emerald-500 text-slate-800 hover:text-emerald-700 font-semibold p-4 rounded-xl transition-all">
+                    <span>✈️</span> Aeroportos
                 </a>
-
-                <a href="#orcamento" onclick="selecionarAtalho('Transfer Hospitalar / Consultas')" class="group p-4 sm:p-5 bg-white rounded-2xl shadow-sm hover:shadow-md border border-slate-200 hover:border-brand-gold transition-all text-center flex flex-col items-center">
-                    <div class="w-12 h-12 mb-3 rounded-xl bg-emerald-50 text-emerald-600 flex items-center justify-center group-hover:bg-brand-gold group-hover:text-brand-dark transition-colors">
-                        <i data-lucide="heart-pulse" class="w-6 h-6"></i>
-                    </div>
-                    <span class="font-bold text-sm sm:text-base text-slate-800">Hospitais</span>
-                    <span class="text-xs text-slate-500 mt-1">Consultas, exames e exames</span>
+                <a href="https://wa.me/5521965480938?text=Olá,%20Ataíde!%20Preciso%20de%20transporte%20para%20hospital." target="_blank" rel="noopener noreferrer"
+                   class="flex items-center justify-center gap-2 bg-slate-100 hover:bg-emerald-50 border border-slate-200 hover:border-emerald-500 text-slate-800 hover:text-emerald-700 font-semibold p-4 rounded-xl transition-all">
+                    <span>🏥</span> Hospitais
                 </a>
-
-                <a href="#orcamento" onclick="selecionarAtalho('Viagem Intermunicipal / Região dos Lagos')" class="group p-4 sm:p-5 bg-white rounded-2xl shadow-sm hover:shadow-md border border-slate-200 hover:border-brand-gold transition-all text-center flex flex-col items-center">
-                    <div class="w-12 h-12 mb-3 rounded-xl bg-purple-50 text-purple-600 flex items-center justify-center group-hover:bg-brand-gold group-hover:text-brand-dark transition-colors">
-                        <i data-lucide="car" class="w-6 h-6"></i>
-                    </div>
-                    <span class="font-bold text-sm sm:text-base text-slate-800">Viagens</span>
-                    <span class="text-xs text-slate-500 mt-1">Búzios, Arraial, Serra & +</span>
+                <a href="https://wa.me/5521965480938?text=Olá,%20Ataíde!%20Gostaria%20de%20informações%20sobre%20passeio%20turístico." target="_blank" rel="noopener noreferrer"
+                   class="flex items-center justify-center gap-2 bg-slate-100 hover:bg-emerald-50 border border-slate-200 hover:border-emerald-500 text-slate-800 hover:text-emerald-700 font-semibold p-4 rounded-xl transition-all">
+                    <span>🌴</span> Passeios Turísticos
                 </a>
             </div>
         </div>
     </section>
 
-    <section id="orcamento" class="py-16 px-4 bg-slate-50">
-        <div class="max-w-3xl mx-auto">
-            <div class="bg-white rounded-3xl card-shadow border border-slate-200 overflow-hidden">
-                
-                <!-- Card Header -->
-                <div class="bg-brand-dark text-white p-6 sm:p-8 text-center relative">
-                    <span class="text-brand-gold font-bold text-xs uppercase tracking-widest block mb-1">Cotação Rápida & Sem Compromisso</span>
-                    <h3 class="text-2xl sm:text-3xl font-extrabold">Solicitar Orçamento de Transfer</h3>
-                    <p class="text-slate-300 text-xs sm:text-sm mt-2 max-w-lg mx-auto">
-                        Preencha os dados abaixo. Nós preparamos as informações e você envia direto para o WhatsApp de Ataíde Ramos para receber o valor estimado!
-                    </p>
+    <!-- FORMULÁRIO DE ORÇAMENTO DINÂMICO -->
+    <section id="orcamento" class="py-16 bg-slate-100">
+        <div class="max-w-2xl mx-auto px-4">
+            <div class="bg-white rounded-2xl shadow-xl p-6 sm:p-8 border border-slate-200">
+                <div class="text-center mb-6">
+                    <h2 class="text-2xl font-bold text-slate-900">Solicitar Orçamento Personalizado</h2>
+                    <p class="text-slate-600 text-sm mt-1">Preencha os dados abaixo para receber os valores diretamente no WhatsApp.</p>
                 </div>
 
-                <!-- Form Fields -->
-                <form id="formOrcamento" onsubmit="processarOrcamento(event)" class="p-6 sm:p-8 space-y-5">
-                    
-                    <!-- 1. Nome Completo & Telefone -->
-                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
-                        <div>
-                            <label for="nome" class="block text-xs font-bold text-slate-700 uppercase mb-1.5">Nome Completo *</label>
-                            <div class="relative">
-                                <span class="absolute inset-y-0 left-0 pl-3.5 flex items-center pointer-events-none text-slate-400">
-                                    <i data-lucide="user" class="w-4 h-4"></i>
-                                </span>
-                                <input type="text" id="nome" required placeholder="Ex: Maria Fernandes" class="w-full pl-10 pr-3.5 py-3 rounded-xl border border-slate-300 focus:ring-2 focus:ring-brand-gold focus:border-brand-gold text-sm transition-all outline-none">
-                            </div>
-                        </div>
-
-                        <div>
-                            <label for="telefone" class="block text-xs font-bold text-slate-700 uppercase mb-1.5">Telefone / WhatsApp *</label>
-                            <div class="relative">
-                                <span class="absolute inset-y-0 left-0 pl-3.5 flex items-center pointer-events-none text-slate-400">
-                                    <i data-lucide="phone" class="w-4 h-4"></i>
-                                </span>
-                                <input type="tel" id="telefone" required maxlength="15" placeholder="(21) 98765-4321" oninput="aplicarMascaraTelefone(event)" class="w-full pl-10 pr-3.5 py-3 rounded-xl border border-slate-300 focus:ring-2 focus:ring-brand-gold focus:border-brand-gold text-sm transition-all outline-none">
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- 2. Endereço Saída & Endereço Destino -->
-                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
-                        <div>
-                            <label for="origem" class="block text-xs font-bold text-slate-700 uppercase mb-1.5">Endereço / Local de Saída *</label>
-                            <div class="relative">
-                                <span class="absolute inset-y-0 left-0 pl-3.5 flex items-center pointer-events-none text-slate-400">
-                                    <i data-lucide="map-pin" class="w-4 h-4"></i>
-                                </span>
-                                <input type="text" id="origem" required placeholder="Ex: Aeroporto Galeão ou Hotel Copacabana" class="w-full pl-10 pr-3.5 py-3 rounded-xl border border-slate-300 focus:ring-2 focus:ring-brand-gold focus:border-brand-gold text-sm transition-all outline-none">
-                            </div>
-                        </div>
-
-                        <div>
-                            <label for="destino" class="block text-xs font-bold text-slate-700 uppercase mb-1.5">Endereço / Local de Destino *</label>
-                            <div class="relative">
-                                <span class="absolute inset-y-0 left-0 pl-3.5 flex items-center pointer-events-none text-slate-400">
-                                    <i data-lucide="navigation" class="w-4 h-4"></i>
-                                </span>
-                                <input type="text" id="destino" required placeholder="Ex: Búzios, Barra da Tijuca, Hospital, etc." class="w-full pl-10 pr-3.5 py-3 rounded-xl border border-slate-300 focus:ring-2 focus:ring-brand-gold focus:border-brand-gold text-sm transition-all outline-none">
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- 3. Quantidade Pessoas & Data/Hora -->
-                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
-                        <div>
-                            <label for="pessoas" class="block text-xs font-bold text-slate-700 uppercase mb-1.5">Quantidade de Pessoas *</label>
-                            <div class="relative">
-                                <span class="absolute inset-y-0 left-0 pl-3.5 flex items-center pointer-events-none text-slate-400">
-                                    <i data-lucide="users" class="w-4 h-4"></i>
-                                </span>
-                                <select id="pessoas" required class="w-full pl-10 pr-3.5 py-3 rounded-xl border border-slate-300 focus:ring-2 focus:ring-brand-gold focus:border-brand-gold text-sm transition-all outline-none bg-white">
-                                    <option value="1 Pessoa">1 Pessoa</option>
-                                    <option value="2 Pessoas">2 Pessoas</option>
-                                    <option value="3 Pessoas">3 Pessoas</option>
-                                    <option value="4 Pessoas">4 Pessoas</option>
-                                    <option value="5+ Pessoas (Grupo)">5 ou mais Pessoas (Grupo)</option>
-                                </select>
-                            </div>
-                        </div>
-
-                        <div>
-                            <label for="dataHora" class="block text-xs font-bold text-slate-700 uppercase mb-1.5">Data e Horário da Viagem *</label>
-                            <div class="relative">
-                                <span class="absolute inset-y-0 left-0 pl-3.5 flex items-center pointer-events-none text-slate-400">
-                                    <i data-lucide="calendar-clock" class="w-4 h-4"></i>
-                                </span>
-                                <input type="datetime-local" id="dataHora" required class="w-full pl-10 pr-3.5 py-3 rounded-xl border border-slate-300 focus:ring-2 focus:ring-brand-gold focus:border-brand-gold text-sm transition-all outline-none bg-white">
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- 4. Observações / Bagagens -->
+                <form id="formOrcamento" onsubmit="enviarOrcamento(event)" class="space-y-4">
                     <div>
-                        <label for="observacoes" class="block text-xs font-bold text-slate-700 uppercase mb-1.5">Observações Adicionais / Bagagens (Opcional)</label>
-                        <textarea id="observacoes" rows="3" placeholder="Informe se há bagagens grandes, se precisa de parada intermediária ou se é transfer de ida e volta..." class="w-full p-3.5 rounded-xl border border-slate-300 focus:ring-2 focus:ring-brand-gold focus:border-brand-gold text-sm transition-all outline-none resize-none"></textarea>
+                        <label class="block text-xs font-bold text-slate-700 uppercase mb-1">Nome Completo *</label>
+                        <input type="text" id="nome" required placeholder="Digite seu nome completo"
+                               class="w-full px-4 py-3 rounded-lg border border-slate-300 focus:ring-2 focus:ring-emerald-500 focus:border-emerald-500 outline-none transition-all text-sm">
                     </div>
 
-                    <!-- Campo oculto para atalhos -->
-                    <input type="hidden" id="modalidadeAtalho" value="">
-
-                    <!-- Submit Button -->
-                    <div class="pt-2">
-                        <button type="submit" class="w-full bg-brand-whatsapp hover:bg-brand-whatsappHover text-white font-bold py-4 px-6 rounded-2xl text-base transition-all shadow-lg flex items-center justify-center gap-2.5 group transform active:scale-98">
-                            <i data-lucide="send" class="w-5 h-5 group-hover:translate-x-1 transition-transform"></i>
-                            <span>Enviar Solicitação pelo WhatsApp</span>
-                        </button>
-                        <p class="text-xs text-slate-500 text-center mt-3 flex items-center justify-center gap-1">
-                            <i data-lucide="lock" class="w-3.5 h-3.5 text-slate-400"></i>
-                            <span>Atendimento direto e seguro com o motorista Ataíde Ramos.</span>
-                        </p>
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                        <div>
+                            <label class="block text-xs font-bold text-slate-700 uppercase mb-1">Telefone / WhatsApp *</label>
+                            <input type="tel" id="telefone" required placeholder="(21) 99999-9999" maxlength="15" oninput="mascaraTelefone(this)"
+                                   class="w-full px-4 py-3 rounded-lg border border-slate-300 focus:ring-2 focus:ring-emerald-500 focus:border-emerald-500 outline-none transition-all text-sm">
+                        </div>
+                        <div>
+                            <label class="block text-xs font-bold text-slate-700 uppercase mb-1">Qtd. de Pessoas *</label>
+                            <input type="number" id="pessoas" min="1" max="20" required placeholder="Ex: 2"
+                                   class="w-full px-4 py-3 rounded-lg border border-slate-300 focus:ring-2 focus:ring-emerald-500 focus:border-emerald-500 outline-none transition-all text-sm">
+                        </div>
                     </div>
+
+                    <div>
+                        <label class="block text-xs font-bold text-slate-700 uppercase mb-1">Endereço / Local de Saída *</label>
+                        <input type="text" id="origem" required placeholder="Ex: Aeroporto do Galeão ou Endereço com Número"
+                               class="w-full px-4 py-3 rounded-lg border border-slate-300 focus:ring-2 focus:ring-emerald-500 focus:border-emerald-500 outline-none transition-all text-sm">
+                    </div>
+
+                    <div>
+                        <label class="block text-xs font-bold text-slate-700 uppercase mb-1">Endereço / Local de Destino *</label>
+                        <input type="text" id="destino" required placeholder="Ex: Hotel em Copacabana ou Bairro"
+                               class="w-full px-4 py-3 rounded-lg border border-slate-300 focus:ring-2 focus:ring-emerald-500 focus:border-emerald-500 outline-none transition-all text-sm">
+                    </div>
+
+                    <div>
+                        <label class="block text-xs font-bold text-slate-700 uppercase mb-1">Data e Horário da Viagem *</label>
+                        <input type="datetime-local" id="dataHora" required
+                               class="w-full px-4 py-3 rounded-lg border border-slate-300 focus:ring-2 focus:ring-emerald-500 focus:border-emerald-500 outline-none transition-all text-sm">
+                    </div>
+
+                    <div>
+                        <label class="block text-xs font-bold text-slate-700 uppercase mb-1">Observações Adicionais (Opcional)</label>
+                        <textarea id="obs" rows="2" placeholder="Ex: Malas grandes, cadeirinha de bebê, etc."
+                                  class="w-full px-4 py-3 rounded-lg border border-slate-300 focus:ring-2 focus:ring-emerald-500 focus:border-emerald-500 outline-none transition-all text-sm"></textarea>
+                    </div>
+
+                    <button type="submit" 
+                            class="w-full bg-emerald-500 hover:bg-emerald-600 text-white font-bold py-3.5 rounded-xl shadow-lg hover:shadow-emerald-500/20 transition-all flex items-center justify-center gap-2">
+                        <span>📲</span> Enviar Solicitação para o WhatsApp
+                    </button>
                 </form>
-
             </div>
         </div>
     </section>
 
-    <section class="py-16 bg-white border-y border-slate-200">
-        <div class="max-w-6xl mx-auto px-4">
-            <div class="text-center max-w-2xl mx-auto mb-12">
-                <span class="text-xs font-bold text-brand-goldDark uppercase tracking-wider block mb-1">Qualidade Garantida</span>
-                <h3 class="text-2xl sm:text-3xl font-extrabold text-slate-900">Por que escolher nosso serviço?</h3>
-                <p class="text-slate-600 text-sm mt-2">Diferenciais pensados para a sua máxima tranquilidade em cada km percorrido.</p>
-            </div>
-
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
-                <div class="p-6 rounded-2xl bg-slate-50 border border-slate-100 space-y-3">
-                    <div class="w-12 h-12 rounded-xl bg-brand-gold/20 text-brand-goldDark flex items-center justify-center font-bold">
-                        <i data-lucide="clock" class="w-6 h-6"></i>
-                    </div>
-                    <h4 class="font-bold text-lg text-slate-900">Pontualidade Inegociável</h4>
-                    <p class="text-sm text-slate-600 leading-relaxed">Acompanhamos horários de voos em tempo real e garantimos presença antecipada no local combinado.</p>
+    <!-- DIFERENCIAIS -->
+    <section class="py-16 bg-white">
+        <div class="max-w-4xl mx-auto px-4">
+            <h2 class="text-2xl font-bold text-center text-slate-900 mb-10">Por que escolher nosso serviço?</h2>
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+                <div class="p-5 bg-slate-50 rounded-xl border border-slate-100 text-center">
+                    <div class="text-3xl mb-2">👨‍✈️</div>
+                    <h3 class="font-bold text-slate-800">Motorista Experiente</h3>
+                    <p class="text-xs text-slate-600 mt-1">Atendimento profissional, discreto e conhecedor do Rio.</p>
                 </div>
-
-                <div class="p-6 rounded-2xl bg-slate-50 border border-slate-100 space-y-3">
-                    <div class="w-12 h-12 rounded-xl bg-brand-gold/20 text-brand-goldDark flex items-center justify-center font-bold">
-                        <i data-lucide="shield-check" class="w-6 h-6"></i>
-                    </div>
-                    <h4 class="font-bold text-lg text-slate-900">Veículo Higienizado e Seguro</h4>
-                    <p class="text-sm text-slate-600 leading-relaxed">Carro moderno, confortável, com ar-condicionado e condução defensiva altamente segura.</p>
+                <div class="p-5 bg-slate-50 rounded-xl border border-slate-100 text-center">
+                    <div class="text-3xl mb-2">⏰</div>
+                    <h3 class="font-bold text-slate-800">Pontualidade</h3>
+                    <p class="text-xs text-slate-600 mt-1">Compromisso rigoroso com os horários agendados.</p>
                 </div>
-
-                <div class="p-6 rounded-2xl bg-slate-50 border border-slate-100 space-y-3">
-                    <div class="w-12 h-12 rounded-xl bg-brand-gold/20 text-brand-goldDark flex items-center justify-center font-bold">
-                        <i data-lucide="user-check" class="w-6 h-6"></i>
-                    </div>
-                    <h4 class="font-bold text-lg text-slate-900">Atendimento Personalizado</h4>
-                    <p class="text-sm text-slate-600 leading-relaxed">Motorista experiente, com amplo conhecimento do trânsito e das melhores rotas do Estado do RJ.</p>
+                <div class="p-5 bg-slate-50 rounded-xl border border-slate-100 text-center">
+                    <div class="text-3xl mb-2">🚘</div>
+                    <h3 class="font-bold text-slate-800">Conforto e Higiene</h3>
+                    <p class="text-xs text-slate-600 mt-1">Veículo limpo, higienizado e com ar-condicionado.</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <section class="py-16 bg-slate-50">
-        <div class="max-w-6xl mx-auto px-4">
-            <div class="flex flex-col md:flex-row justify-between items-start md:items-end mb-10 gap-4">
-                <div>
-                    <span class="text-xs font-bold text-brand-goldDark uppercase tracking-wider">Conheça a Cidade Maravilhosa</span>
-                    <h3 class="text-2xl sm:text-3xl font-bold text-slate-900">Pontos Turísticos & Destinos</h3>
+    <!-- GALERIA / PONTOS TURÍSTICOS -->
+    <section class="py-16 bg-slate-50 border-t border-slate-200">
+        <div class="max-w-5xl mx-auto px-4">
+            <h2 class="text-2xl font-bold text-center text-slate-900 mb-8">Principais Destinos</h2>
+            <div class="grid grid-cols-2 sm:grid-cols-4 gap-4">
+                <div class="rounded-xl overflow-hidden shadow-sm h-40">
+                    <img src="https://images.unsplash.com/photo-1544989164-31dc3c645987?q=80&w=400&auto=format&fit=crop" alt="Cristo Redentor" class="w-full h-full object-cover hover:scale-105 transition-all duration-300" loading="lazy">
                 </div>
-                <!-- Botão Discreto Ingressos Trem do Corcovado -->
-                <a href="https://www.tremdocorcovado.rio/" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 text-xs font-semibold bg-slate-900 text-white px-4 py-2.5 rounded-xl hover:bg-slate-800 transition-colors shadow-sm">
-                    <i data-lucide="ticket" class="w-4 h-4 text-brand-gold"></i>
-                    <span>Ingressos Trem do Corcovado</span>
-                </a>
-            </div>
-
-            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5">
-                <div class="group bg-white rounded-2xl overflow-hidden card-shadow border border-slate-200 transition-all">
-                    <div class="relative h-48 overflow-hidden">
-                        <img src="https://images.unsplash.com/photo-1516306580123-e6e52b1b7b5f?q=80&w=600&auto=format&fit=crop" loading="lazy" alt="Cristo Redentor" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300">
-                    </div>
-                    <div class="p-4">
-                        <h4 class="font-bold text-slate-900">Cristo Redentor</h4>
-                        <p class="text-xs text-slate-500 mt-1">Corcovado & Parque Nacional da Tijuca</p>
-                    </div>
+                <div class="rounded-xl overflow-hidden shadow-sm h-40">
+                    <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=400&auto=format&fit=crop" alt="Pão de Açúcar" class="w-full h-full object-cover hover:scale-105 transition-all duration-300" loading="lazy">
                 </div>
-
-                <div class="group bg-white rounded-2xl overflow-hidden card-shadow border border-slate-200 transition-all">
-                    <div class="relative h-48 overflow-hidden">
-                        <img src="https://images.unsplash.com/photo-1483729558449-99ef09a8c325?q=80&w=600&auto=format&fit=crop" loading="lazy" alt="Pão de Açúcar" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300">
-                    </div>
-                    <div class="p-4">
-                        <h4 class="font-bold text-slate-900">Pão de Açúcar</h4>
-                        <p class="text-xs text-slate-500 mt-1">Urca & Mirantes Espetaculares</p>
-                    </div>
+                <div class="rounded-xl overflow-hidden shadow-sm h-40">
+                    <img src="https://images.unsplash.com/photo-1518639192441-8fce0a366e2e?q=80&w=400&auto=format&fit=crop" alt="Praia no Rio" class="w-full h-full object-cover hover:scale-105 transition-all duration-300" loading="lazy">
                 </div>
-
-                <div class="group bg-white rounded-2xl overflow-hidden card-shadow border border-slate-200 transition-all">
-                    <div class="relative h-48 overflow-hidden">
-                        <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?q=80&w=600&auto=format&fit=crop" loading="lazy" alt="Praias do Rio" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300">
-                    </div>
-                    <div class="p-4">
-                        <h4 class="font-bold text-slate-900">Praias Famosas</h4>
-                        <p class="text-xs text-slate-500 mt-1">Copacabana, Ipanema, Leblon & Barra</p>
-                    </div>
-                </div>
-
-                <div class="group bg-white rounded-2xl overflow-hidden card-shadow border border-slate-200 transition-all">
-                    <div class="relative h-48 overflow-hidden">
-                        <img src="https://images.unsplash.com/photo-1544989164-31dc3c645987?q=80&w=600&auto=format&fit=crop" loading="lazy" alt="Região dos Lagos" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300">
-                    </div>
-                    <div class="p-4">
-                        <h4 class="font-bold text-slate-900">Região dos Lagos</h4>
-                        <p class="text-xs text-slate-500 mt-1">Armação dos Búzios, Arraial & Cabo Frio</p>
-                    </div>
+                <div class="rounded-xl overflow-hidden shadow-sm h-40">
+                    <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?q=80&w=400&auto=format&fit=crop" alt="Copacabana" class="w-full h-full object-cover hover:scale-105 transition-all duration-300" loading="lazy">
                 </div>
             </div>
         </div>
     </section>
 
-    <section class="py-16 bg-white border-t border-slate-200">
-        <div class="max-w-4xl mx-auto px-4 text-center">
-            <span class="text-xs font-bold text-brand-goldDark uppercase tracking-wider block mb-1">Avaliações</span>
-            <h3 class="text-2xl sm:text-3xl font-bold text-slate-900 mb-8">O que dizem nossos passageiros</h3>
-            
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
-                <div class="p-5 rounded-2xl bg-slate-50 border border-slate-100 text-left flex flex-col justify-between">
-                    <div>
-                        <div class="flex text-amber-400 mb-2">★★★★★</div>
-                        <p class="text-sm text-slate-700 italic">"Motorista super pontual, atencioso e o carro estava muito limpo. Cheguei com antecedência ao aeroporto."</p>
-                    </div>
-                    <span class="block text-xs font-bold text-slate-900 mt-4">— Carlos E., São Paulo</span>
-                </div>
+    <!-- BOTÕES FLUTUANTES -->
+    <a href="https://wa.me/5521965480938" target="_blank" rel="noopener noreferrer" 
+       class="fixed bottom-5 right-5 bg-emerald-500 text-white p-4 rounded-full shadow-2xl hover:bg-emerald-600 transition-all z-50 flex items-center justify-center text-2xl" aria-label="WhatsApp">
+        💬
+    </a>
 
-                <div class="p-5 rounded-2xl bg-slate-50 border border-slate-100 text-left flex flex-col justify-between">
-                    <div>
-                        <div class="flex text-amber-400 mb-2">★★★★★</div>
-                        <p class="text-sm text-slate-700 italic">"Atendimento excelente no transporte hospitalar para minha mãe. Muita paciência e cuidado no percurso."</p>
-                    </div>
-                    <span class="block text-xs font-bold text-slate-900 mt-4">— Renata M., Rio de Janeiro</span>
-                </div>
+    <a href="https://www.tremdocorcovado.rio/" target="_blank" rel="noopener noreferrer" 
+       class="fixed bottom-20 right-5 bg-slate-900/90 text-white text-xs px-3 py-2 rounded-lg shadow-lg hover:bg-slate-900 transition-all z-40 border border-slate-700">
+        🎫 Ingressos Corcovado
+    </a>
 
-                <div class="p-5 rounded-2xl bg-slate-50 border border-slate-100 text-left flex flex-col justify-between">
-                    <div>
-                        <div class="flex text-amber-400 mb-2">★★★★★</div>
-                        <p class="text-sm text-slate-700 italic">"Fizemos uma viagem tranquila em família para Búzios. Preço justo e condução super agradável."</p>
-                    </div>
-                    <span class="block text-xs font-bold text-slate-900 mt-4">— Marcelo & Família, BH</span>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <footer class="bg-brand-dark text-slate-400 py-8 px-4 text-center border-t border-slate-800 text-xs">
-        <div class="max-w-6xl mx-auto space-y-3">
-            <p class="text-slate-300 font-semibold text-sm">Ataíde Ramos • Transfer Personalizado no Rio de Janeiro</p>
-            <p>© 2026 Todos os direitos reservados. Transporte Particular e Executivo.</p>
+    <!-- FOOTER -->
+    <footer class="bg-slate-900 text-slate-400 py-8 text-center text-sm mt-auto border-t border-slate-800">
+        <div class="max-w-4xl mx-auto px-4 space-y-2">
+            <p>© 2026 Ataíde Ramos - Transfer RJ. Todos os direitos reservados.</p>
+            <p class="text-xs text-slate-500">Atendimento personalizado no Rio de Janeiro e região metropolitana.</p>
         </div>
     </footer>
 
-    <a href="https://wa.me/5521965480938" target="_blank" rel="noopener noreferrer" aria-label="Falar no WhatsApp" class="fixed bottom-5 right-5 z-40 bg-brand-whatsapp hover:bg-brand-whatsappHover text-white p-3.5 rounded-full shadow-2xl transition-all transform hover:scale-110 flex items-center justify-center">
-        <i data-lucide="message-circle" class="w-7 h-7"></i>
-    </a>
-
-    <div id="modalConfirmacao" class="fixed inset-0 bg-slate-900/60 backdrop-blur-sm z-50 flex items-center justify-center p-4 hidden">
-        <div class="bg-white rounded-3xl max-w-md w-full p-6 text-center shadow-2xl space-y-4">
-            <div class="w-14 h-14 bg-emerald-100 text-emerald-600 rounded-full flex items-center justify-center mx-auto">
-                <i data-lucide="check-circle-2" class="w-8 h-8"></i>
-            </div>
-            <h4 class="text-xl font-extrabold text-slate-900">Solicitação Pronta!</h4>
-            <p class="text-sm text-slate-600">
-                Seus dados foram formatados. Ao clicar no botão abaixo, o aplicativo do WhatsApp será aberto para você enviar os detalhes diretamente ao <strong>Ataíde Ramos</strong>.
-            </p>
-            <button onclick="confirmarEEnviar()" class="w-full bg-brand-whatsapp hover:bg-brand-whatsappHover text-white font-bold py-3.5 rounded-xl text-sm transition-all shadow-md">
-                Abrir WhatsApp e Enviar
-            </button>
-        </div>
-    </div>
-
+    <!-- JAVASCRIPT DA PÁGINA -->
     <script>
-        // Inicializar os Ícones Lucide
-        lucide.createIcons();
-
-        // Variável global para armazenar o link compilado
-        let linkWhatsappFinal = '';
-
-        // Máscara dinâmica para o telefone (XX) 9XXXX-XXXX
-        function aplicarMascaraTelefone(event) {
-            let v = event.target.value.replace(/\D/g, "");
+        // Máscara dinâmica para o telefone
+        function mascaraTelefone(input) {
+            let v = input.value.replace(/\D/g, "");
             if (v.length > 11) v = v.slice(0, 11);
-
             if (v.length > 10) {
                 v = v.replace(/^(\d{2})(\d{5})(\d{4})$/, "($1) $2-$3");
             } else if (v.length > 6) {
@@ -435,88 +223,49 @@
             } else if (v.length > 0) {
                 v = v.replace(/^(\d*)$/, "($1");
             }
-            event.target.value = v;
+            input.value = v;
         }
 
-        // Preenchimento de atalhos rápidos
-        function selecionarAtalho(modalidade) {
-            document.getElementById('modalidadeAtalho').value = modalidade;
-        }
-
-        // Sanitização simples contra XSS
-        function sanitizarInput(str) {
+        // Função para formatar a data
+        function formatarDataHora(str) {
             if (!str) return '';
-            const temp = document.createElement('div');
-            temp.textContent = str;
-            return temp.innerHTML.trim();
+            const data = new Date(str);
+            return data.toLocaleString('pt-BR', { dateStyle: 'short', timeStyle: 'short' });
         }
 
-        // Formatação de data e hora para leitura em Português
-        function formatarDataHora(stringData) {
-            if (!stringData) return "A combinar";
-            try {
-                const d = new Date(stringData);
-                return d.toLocaleString('pt-BR', {
-                    day: '2-digit',
-                    month: '2-digit',
-                    year: 'numeric',
-                    hour: '2-digit',
-                    minute: '2-digit'
-                });
-            } catch (e) {
-                return stringData;
-            }
-        }
+        // Função para enviar os dados formatados para o WhatsApp do Ataíde Ramos
+        function enviarOrcamento(e) {
+            e.preventDefault();
 
-        // Processamento e montagem da mensagem para o WhatsApp
-        function processarOrcamento(event) {
-            event.preventDefault();
-
-            const nome = sanitizarInput(document.getElementById('nome').value);
-            const telefone = sanitizarInput(document.getElementById('telefone').value);
-            const origem = sanitizarInput(document.getElementById('origem').value);
-            const destino = sanitizarInput(document.getElementById('destino').value);
-            const pessoas = sanitizarInput(document.getElementById('pessoas').value);
+            const nome = document.getElementById('nome').value.trim();
+            const telefone = document.getElementById('telefone').value.trim();
+            const origem = document.getElementById('origem').value.trim();
+            const destino = document.getElementById('destino').value.trim();
+            const pessoas = document.getElementById('pessoas').value.trim();
             const dataHoraRaw = document.getElementById('dataHora').value;
-            const dataHora = formatarDataHora(dataHoraRaw);
-            const observacoes = sanitizarInput(document.getElementById('observacoes').value);
-            const atalho = sanitizarInput(document.getElementById('modalidadeAtalho').value);
+            const obs = document.getElementById('obs').value.trim();
 
-            // Montagem do texto do WhatsApp
-            let msg = `Olá, Ataíde! Gostaria de um orçamento para transfer:\n\n`;
-            msg += `👤 *Nome:* ${nome}\n`;
-            msg += `📞 *Telefone/Zap:* ${telefone}\n`;
-            msg += `📍 *Local de Saída:* ${origem}\n`;
-            msg += `🏁 *Local de Destino:* ${destino}\n`;
-            msg += `👥 *Quantidade de Pessoas:* ${pessoas}\n`;
-            msg += `📅 *Data e Horário:* ${dataHora}\n`;
+            const dataHoraFormatada = formatarDataHora(dataHoraRaw);
 
-            if (atalho) {
-                msg += `🏷️ *Interesse:* ${atalho}\n`;
+            // Mensagem personalizada com saudação ao Ataíde Ramos
+            let mensagem = `*Olá, Ataíde Ramos! Gostaria de solicitar um orçamento.*%0A%0A` +
+                           `Agradeço a atenção! Como podemos prosseguir? Aqui estão os dados da viagem:%0A%0A` +
+                           `👤 *Nome:* ${encodeURIComponent(nome)}%0A` +
+                           `📞 *Telefone:* ${encodeURIComponent(telefone)}%0A` +
+                           `📍 *Origem:* ${encodeURIComponent(origem)}%0A` +
+                           `🏁 *Destino:* ${encodeURIComponent(destino)}%0A` +
+                           `👥 *Passageiros:* ${encodeURIComponent(pessoas)}%0A` +
+                           `📅 *Data/Hora:* ${encodeURIComponent(dataHoraFormatada)}%0A`;
+
+            if (obs) {
+                mensagem += `📝 *Observações:* ${encodeURIComponent(obs)}%0A`;
             }
 
-            if (observacoes) {
-                msg += `📝 *Observações/Bagagens:* ${observacoes}\n`;
-            }
+            const numeroWhatsApp = "5521965480938";
+            const url = `https://wa.me/${numeroWhatsApp}?text=${mensagem}`;
 
-            msg += `\nAguardo a confirmação de valor e disponibilidade!`;
-
-            const numeroCelular = "5521965480938";
-            linkWhatsappFinal = `https://wa.me/${numeroCelular}?text=${encodeURIComponent(msg)}`;
-
-            // Exibir Modal Informativo
-            document.getElementById('modalConfirmacao').classList.remove('hidden');
-        }
-
-        // Direcionamento final ao clicar no modal
-        function confirmarEEnviar() {
-            document.getElementById('modalConfirmacao').classList.add('hidden');
-            if (linkWhatsappFinal) {
-                window.open(linkWhatsappFinal, '_blank', 'noopener,noreferrer');
-            }
+            window.open(url, '_blank');
         }
     </script>
 </body>
 </html>
-
-
